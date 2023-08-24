@@ -5,12 +5,12 @@ lista = pd.read_csv('archivo_1.csv')
 print(lista)
 print()
 
-#Suma de Ingresos 
+#Suma de Ingresos
 
 total_ingresos = lista['ingresos'].sum()
 print('total de ingresos es de ', total_ingresos)
 print()
-#promedio en las edades 
+#promedio en las edades
 
 promedio_edades = lista['edad'].mean()
 print('el promedio en las edades es ', promedio_edades)
@@ -30,7 +30,7 @@ print('promedio de ingresos por ciudad')
 print(promedios_por_ciudad)
 print()
 
-#persona mayor, persona menor 
+#persona mayor, persona menor
 
 # Encuentra la persona más joven
 persona_mas_joven = lista[lista['edad'] == lista['edad'].min()]
@@ -65,7 +65,7 @@ print('ingresos totales por ciudad')
 print(ingresos_totales_por_ciudad)
 print()
 
-#promedio de ingresos menores a 30 
+#promedio de ingresos menores a 30
 menores_30 = lista[lista['edad'] < 30]
 promedio = menores_30['ingresos'].mean()
 print('el promedio de ingresos de los menores de 30 años es ', promedio)
