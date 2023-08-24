@@ -69,3 +69,8 @@ print()
 menores_30 = lista[lista['edad'] < 30]
 promedio = menores_30['ingresos'].mean()
 print('el promedio de ingresos de los menores de 30 años es ', promedio)
+
+#el que gana mas
+gana_mas = lista[lista['ingresos'] == lista['ingresos'].max()]
+print('Mayor Ingresos')
+print(gana_mas)
